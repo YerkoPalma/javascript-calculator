@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div ng-app="Calculator" ng-controller="AppCtrl" ng-cloak>
+  <md-content class="md-padding" layout="row" layout-wrap layout-align="center start" layout-xs="column">
+    <md-card>
+      <md-card-content layout="column" layout-align="space-between" class="card-content">        
+        <md-content class="result" layout="row">
+          <p class="calculated">{{output}}</p>
+          <p class="output">{{result}}</p>
+        </md-content>
+        <md-content class="keyboard" layout="row">
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button ng-click="updateOutput(7)">7</md-button>
+            <md-button ng-click="updateOutput(8)">8</md-button>
+            <md-button ng-click="updateOutput(9)">9</md-button>
+          </section>
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button ng-click="updateOutput(4)">4</md-button>
+            <md-button ng-click="updateOutput(5)">5</md-button>
+            <md-button ng-click="updateOutput(6)">6</md-button>
+          </section>
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button ng-click="updateOutput(1)">1</md-button>
+            <md-button ng-click="updateOutput(2)">2</md-button>
+            <md-button ng-click="updateOutput(3)">3</md-button>
+          </section>
+          <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <md-button>.</md-button>
+            <md-button ng-click="updateOutput(0)">0</md-button>
+            <md-button ng-click="equal()">=</md-button>
+          </section>
+          <md-content class="keyboard-controls">
+            <md-button ng-click="clear()" class="md-fab md-mini" aria-label="Eat cake">
+              <i class="material-icons">block</i>
+            </md-button> 
+            <md-button ng-click="divide()" class="md-fab md-mini" aria-label="Eat cake">
+              /
+            </md-button>
+            <md-button ng-click="multiply()" class="md-fab md-mini" aria-label="Eat cake">
+              *
+            </md-button>
+            <md-button ng-click="add()" class="md-fab md-mini" aria-label="Eat cake">
+              +
+            </md-button>
+            <md-button ng-click="substract()" class="md-fab md-mini" aria-label="Eat cake">
+              -
+            </md-button>
+          </md-content>
+        </md-content>
+      </md-card-content>
+    </md-card>
+  </md-content>
+</div>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

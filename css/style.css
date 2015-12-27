@@ -1,0 +1,67 @@
+.result {
+  background-color: #f9fbe7;
+  min-height : 100px;
+  min-width : 300px;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.result p {
+  text-align: right;
+  vertical-align: baseline;
+  padding: 10px;
+  font-size: 36px;
+  display: inline;
+  float: right;
+  margin: 0;
+  width: 100%;
+}
+.output {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+p.calculated {
+  font-size: 24px;
+  color: #999;
+}
+.keyboard {
+  background-color: #26a69a;  
+  width: 100%;
+  position: relative;
+  min-width: 100px;
+  min-height: 260px;
+  display: block;
+}
+.keyboard section {
+  display: block;
+}
+.keyboard section button {
+  min-width: 62px;
+  font-weight: bold;
+  height: 50px;
+}
+.keyboard-controls {
+  min-height: 200px;
+  width: 57px;
+  float: right;
+  background-color: #00796b;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card-content {
+  padding: 0;
+}
+i.material-icons {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.md-button.md-fab {
+  box-shadow : none;
+  background-color: #00796b;
+}
+.md-button.md-fab:not([disabled]):hover {
+  background-color: #00796b;
+}
